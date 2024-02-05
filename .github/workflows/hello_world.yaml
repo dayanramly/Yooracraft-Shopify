@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Hello world
-        run: echo "Hello world!"
+        run: echo "Hello world!" ${{ secrets.ENV_LABEL_TEST }}
         shell: bash
   goodbye:
     runs-on: ubuntu-latest
